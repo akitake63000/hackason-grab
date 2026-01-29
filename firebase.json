@@ -1,10 +1,28 @@
 {
   "hosting": {
-    "public": "public",
+    "public": "apps/web/out",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "predeploy": [
+      "npm --prefix apps/web run build"
+    ],
+    "rewrites": [
+      {
+        "source": "/api/**",
+        "run": {
+          "serviceId": "agent-api",
+          "region": "asia-northeast1"
+        }
+      }
     ]
+  },
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "storage": {
+    "rules": "storage.rules"
   }
 }

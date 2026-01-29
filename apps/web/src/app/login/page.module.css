@@ -1,0 +1,42 @@
+.block {
+  display: grid;
+  gap: 12px;
+}
+
+.user {
+  font-weight: 600;
+}
+
+.action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+}
+
+.action:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.actionSecondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #fffaf1;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 13px;
+}

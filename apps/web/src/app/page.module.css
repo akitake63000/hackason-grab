@@ -1,0 +1,79 @@
+.hero {
+  display: grid;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: #fffaf2;
+}
+
+.heroText {
+  font-size: 16px;
+  color: var(--muted);
+}
+
+.ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.ctaPrimary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+}
+
+.ctaSecondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #fffaf1;
+  font-weight: 600;
+}
+
+.section {
+  display: grid;
+  gap: 10px;
+}
+
+.section h2 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.stepList {
+  display: grid;
+  gap: 6px;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.featureGrid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
+.featureCard {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: #ffffff;
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.featureCard h3 {
+  font-size: 14px;
+}
