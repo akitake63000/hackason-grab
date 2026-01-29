@@ -16,6 +16,8 @@ jobs:
           node-version: "20"
       - name: Install web dependencies
         run: npm ci --prefix apps/web
+      - name: Install mock dependencies
+        run: npm ci --prefix mock
       - uses: FirebaseExtended/action-hosting-deploy@v0
         env:
           NEXT_PUBLIC_FIREBASE_API_KEY: ${{ secrets.NEXT_PUBLIC_FIREBASE_API_KEY }}

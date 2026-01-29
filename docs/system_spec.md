@@ -151,7 +151,7 @@ hackason-grab/
 ├─ firestore.rules
 ├─ storage.rules
 ├─ firebase.json
-└─ doc/                   # 本仕様書
+└─ docs/                   # 本仕様書
 ```
 
 ---

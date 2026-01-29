@@ -19,6 +19,9 @@ export default function Home() {
           <a className={styles.ctaSecondary} href="/checkin">
             写真チェックインへ
           </a>
+          <a className={styles.ctaSecondary} href="/mock/">
+            モックを見る
+          </a>
         </div>
       </section>
 
